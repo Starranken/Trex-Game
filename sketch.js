@@ -69,7 +69,7 @@ function setup() {
 }
 
 function draw() {
-  //trex.debug = true;
+  trex.debug = true;
   background("white");
   text("Score: "+ score, 500,50);
   
@@ -92,7 +92,7 @@ function draw() {
     spawnObstacles();
   
     if(obstaclesGroup.isTouching(trex)){
-        gameState = END;
+        /*gameState = END;*/
     }
   }
   else if (gameState === END) {
